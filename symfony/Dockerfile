@@ -15,7 +15,9 @@ COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
 RUN apt install curl git -y \
     && curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | bash \
-    && apt install symfony-cli -y
+    && apt install symfony-cli -y \
+    && curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
+    && apt install nodejs -y
 
 WORKDIR /home/cli/
 
