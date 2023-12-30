@@ -1,3 +1,0 @@
-#!/bin/bash
-
-docker run -it --rm -v "$(pwd):/home/cli" -p "8000:8000" ghcr.io/jagfx/symfony:latest $@
