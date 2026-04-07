@@ -1,4 +1,4 @@
-FROM php:8.3-cli
+FROM php:8.5-cli
 
 LABEL org.opencontainers.image.source=https://github.com/JAGFx/environements
 LABEL org.opencontainers.image.licenses=MIT
